@@ -1,0 +1,69 @@
+/* Dark Theme (Default) */
+:root,
+.dark-theme,
+[data-theme="dark"] {
+  --bg-primary: #0d0f1a;
+  --bg-secondary: #131629;
+  --bg-card: #181c30;
+  --bg-nav: rgba(13, 15, 26, 0.92);
+  --accent: #7c5cfc;
+  --accent2: #a78bfa;
+  --accent-glow: rgba(124, 92, 252, 0.35);
+  --text-primary: #f1f0ff;
+  --text-secondary: #9ca3c9;
+  --text-muted: #5f6485;
+  --border: rgba(124, 92, 252, 0.18);
+  --card-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+  --pill-bg: rgba(124, 92, 252, 0.12);
+  --nav-link: #c4c1e8;
+  --input-bg: #0f1120;
+}
+
+/* Light Theme */
+.light-theme,
+[data-theme="light"] {
+  --bg-primary: #f5f4ff;
+  --bg-secondary: #eeeeff;
+  --bg-card: #ffffff;
+  --bg-nav: rgba(245, 244, 255, 0.95);
+  --accent: #6d42f5;
+  --accent2: #8b5cf6;
+  --accent-glow: rgba(109, 66, 245, 0.2);
+  --text-primary: #1a1535;
+  --text-secondary: #4b4878;
+  --text-muted: #8884aa;
+  --border: rgba(109, 66, 245, 0.2);
+  --card-shadow: 0 4px 24px rgba(109, 66, 245, 0.1);
+  --pill-bg: rgba(109, 66, 245, 0.08);
+  --nav-link: #3d3660;
+  --input-bg: #f0effe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.3s, color 0.3s;
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+section {
+  min-height: 100vh;
+  padding: 100px 0 60px;
+}
+
+
